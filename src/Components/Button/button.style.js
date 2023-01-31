@@ -11,4 +11,5 @@ export const RoundedBtn = styled.button`
   right: 9%;
   top: 67%;
   outline: none;
+  z-index: 1;
 `;

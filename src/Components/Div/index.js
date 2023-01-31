@@ -1,4 +1,4 @@
-import { ParentDiv, IntroDetailsDiv } from "./div.style";
+import { ParentDiv, IntroDetailsDiv, TaskDiv } from "./div.style";
 
 export default ParentDiv;
-export { IntroDetailsDiv };
+export { IntroDetailsDiv, TaskDiv };

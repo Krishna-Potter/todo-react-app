@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ParentDiv = styled.div`
   background-color: #fff;
   border-radius: 5px;
-  height: 50vh;
+  height: 98vh;
 `;
 
 export const IntroDetailsDiv = styled(ParentDiv)`
@@ -13,5 +13,10 @@ export const IntroDetailsDiv = styled(ParentDiv)`
   border-bottom: 1px solid #757575;
   height: 8vh;
   padding: 3% 5% 0% 5%;
+  position: relative;
+`;
+
+export const TaskDiv = styled(IntroDetailsDiv)`
+  min-height: 8vh;
   position: relative;
 `;

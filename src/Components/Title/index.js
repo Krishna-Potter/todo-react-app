@@ -1,4 +1,10 @@
-import { DateTimeTitle, SpanTitle, SpanCount } from "./title.style";
+import {
+  DateTimeTitle,
+  SpanTitle,
+  SpanCount,
+  TaskName,
+  TaskTime,
+} from "./title.style";
 
 export default DateTimeTitle;
-export { SpanTitle, SpanCount };
+export { SpanTitle, SpanCount, TaskName, TaskTime };
