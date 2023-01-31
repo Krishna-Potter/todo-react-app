@@ -12,13 +12,43 @@ import {
 import { BodyStyles } from "./../Components/Body/body.style";
 
 export const App = () => {
+  const dateData = new Date();
+  const currentDate = dateData.getDate();
+  const currentDay = dateData.getDay();
+  const dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturdat",
+  ];
+  const currentMonth = dateData.getMonth() + 1;
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   return (
     <>
       <BodyStyles>
         <ParentDiv>
           <IntroDetailsDiv>
-            <DateTimeTitle>Friday,20th</DateTimeTitle>
-            <SpanTitle>January</SpanTitle>
+            <DateTimeTitle>
+              {dayNames[currentDay]},{currentDate}th
+            </DateTimeTitle>
+            <SpanTitle>{monthNames[currentMonth]}</SpanTitle>
             <SpanCount>12 Tasks</SpanCount>
             <RoundedBtn>+</RoundedBtn>
           </IntroDetailsDiv>
